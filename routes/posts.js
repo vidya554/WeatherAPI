@@ -3,6 +3,8 @@ const router = express.Router();
 const bodyparser = require("body-parser");
 const Post = require("../models/Post");
 
+
+
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.find();

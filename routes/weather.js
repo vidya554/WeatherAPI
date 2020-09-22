@@ -4,6 +4,8 @@ const bodyparser = require("body-parser");
 
 const Weather = require("../models/Weather");
 
+
+//for current weather info
 router.get("/current/:city/:country", async (req, res) => {
   try {
     const currentWeather = await Weather.findOne({city:  { $regex : new RegExp(req.params.city, "i") }, country: { $regex : new RegExp(req.params.country, "i") }},{city:1, current:1, daily:{ $slice: 1 }, timezone:1});
@@ -15,7 +17,7 @@ router.get("/current/:city/:country", async (req, res) => {
   }
 });
 
-
+//for weekly forecast
 router.get("/current/forecast/:city/:country", async (req, res) => {
   try {
     const currentWeather = await Weather.findOne({city:  { $regex : new RegExp(req.params.city, "i") }, country: { $regex : new RegExp(req.params.country, "i") }},{city:1, current:1, daily:1, timezone:1});
