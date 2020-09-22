@@ -1,0 +1,26 @@
+[
+  {
+    "city_id": 1269843,
+    "name": "HYDERABAD",
+    "country": "IN",
+    "coord": { "lon":78.474442,"lat":17.37528 }
+  },
+  {
+    "city_id": 6619347,
+    "name": "MUMBAI",
+    "country": "IN",
+    "coord": { "lon":73.015823,"lat":19.03681 }
+  },
+  {
+    "city_id": 1273294,
+    "name": "Delhi",
+    "country": "IN",
+    "coord": { "lon":77.216667,"lat":28.666668 }
+  },
+  {
+    "city_id": 4887398,
+    "name": "Chicago",
+    "country": "US",
+    "coord": { "lon":-87.650047,"lat":41.850029 }
+  }
+]
